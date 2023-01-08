@@ -24,6 +24,9 @@ public class Circle {
     }
 
     public double getCircumference() {
+        /*
+        Returns the circumference of this circle, which is twice the radius.
+         */
         return this.radius * this.radius;
     }
 
