@@ -31,7 +31,7 @@ public class Circle {
 
         "(x - 1)^2 + (y - 1)^2 = 4"
          */
-        return "(x-" + this.x + ")^2" + "(y-" + this.y + " = " + this.radius;
+        return "(x - " + this.x + ")^2" + " + (y - " + this.y + ")^2 = " + this.radius;
     }
 
     public double getCircumference() {
@@ -48,8 +48,10 @@ public class Circle {
          */
         if (radius < 0) {
             this.radius = 0;
-        } else {
+        } else if (radius > 100){
             this.radius = 100;
+        } else {
+            this.radius = radius;
         }
     }
 
